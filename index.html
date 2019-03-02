@@ -11,18 +11,39 @@
   box-sizing: border-box;
 }
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-p {
+h3 {
+  width: 40%;
   border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+  text-align: center;
+ /* vertical-align: middle;*/
+  margin-top: 0px; 
+  position: relative;
+  top:0px;
+  left: 60%;
+}
+
+.s1 {
+  background: #AEEEFA;
+}
+
+.s2 {
+  background: #F8AAFA;
+}
+
+.s3{
+  background: #D9FAAA;
+}
+
+
+p {
+  height: 250px;
+  width: 95%;
+  background-color: #FFFAAA;
+  padding-left: 6%;
+  font-family: Helvetica, Arial, Sans-serif;
 }
 
 /* Simple Responsive Framework. */
@@ -31,10 +52,12 @@ p {
 }
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
+    border: 1px solid black;
+    margin: 1%;
+    background-color: #FFFAAA;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -46,7 +69,7 @@ p {
     width: 25%;
   }
   .col-lg-4 {
-    width: 33.33%;
+    width: 31.33%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -75,10 +98,12 @@ p {
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
+    border: 1px solid black;
+    margin:1%;
+    background-color: #FFFAAA;
   }
   .col-md-1 {
     width: 8.33%;
@@ -90,13 +115,13 @@ p {
     width: 25%;
   }
   .col-md-4 {
-    width: 33.33%;
+    width: 31.33%;
   }
   .col-md-5 {
     width: 41.66%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 48%;
   }
   .col-md-7 {
     width: 58.33%;
@@ -114,25 +139,66 @@ p {
     width: 91.66%;
   }
   .col-md-12 {
-    width: 100%;
+    width: 98%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+    margin:1%;
+    background-color: #FFFAAA;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 98%;
   }
 }
 
 </style>
 </head>
 <body>
-<h1>Responsive Layout</h1>
+<h1>Heading</h1>
 
 <div class="row">
-  <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 2</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 5</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
+  <div class="col-lg-4 col-md-6  col-sm-12"><h3 class="s1">Lorem</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit elementum, aliquam habitasse placerat pulvinar curabitur netus dignissim, ac pellentesque vulputate donec mauris commodo class. Ad ultrices sociis interdum condimentum justo auctor natoque purus, morbi nunc donec dignissim imperdiet et augue tortor, orci mi egestas nascetur lectus ac nulla. </p></div>
+  <div class="col-lg-4 col-md-6 col-sm-12"><h3 class="s2">Phase</h3><p>Phasellus vel nisi laoreet purus fusce nec risus gravida morbi posuere cum quam, himenaeos tortor justo nostra commodo a natoque pulvinar eros habitant urna. At rhoncus duis placerat sapien nullam class cum, orci cras vestibulum risus sociis venenatis, feugiat sollicitudin mattis quis in dictumst. Himenaeos non aliquet lacinia natoque hac mus quam vitae scelerisque eros, magna tincidunt taciti mattis nulla ac odio class.</p></div>
+  <div class="col-lg-4 col-md-12 col-sm-12"><h3 class="s3">Ultrices</h3><p>Ad ultrices sociis interdum condimentum justo auctor natoque purus, morbi nunc donec dignissim imperdiet et augue tortor, orci mi egestas nascetur lectus ac nulla. Habitant eget sodales primis nec integer bibendum nascetur, ornare ut nam risus ligula magnis, elementum penatibus purus ante proin eleifend.</p></div>
 </div>
 
 </body>
 </html>
+
